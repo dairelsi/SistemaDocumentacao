@@ -26,7 +26,7 @@ export default function Login() {
     setLoading(true);
 
     try {
-      const usuario = login(email, senha);
+      const usuario = await login(email, senha);
       
       if (usuario) {
         toast.success('Login realizado com sucesso!');
@@ -35,7 +35,7 @@ export default function Login() {
         toast.error('Email ou senha incorretos');
       }
     } catch (error) {
-      toast.error('Erro ao fazer login');
+      toast.error('Erro de conexão');
     } finally {
       setLoading(false);
     }
