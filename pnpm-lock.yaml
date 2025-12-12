@@ -90,8 +90,8 @@ dependencies:
     specifier: ^1.1.4
     version: 1.2.8(@types/react-dom@19.2.2)(@types/react@19.2.2)(react-dom@19.2.0)(react@19.2.0)
   '@supabase/supabase-js':
-    specifier: ^2.50.3
-    version: 2.78.0
+    specifier: ^2.87.1
+    version: 2.87.1
   '@tanstack/react-query':
     specifier: ^5.56.2
     version: 5.90.6(react@19.2.0)
@@ -2359,38 +2359,31 @@ packages:
     dev: true
     optional: true
 
-  /@supabase/auth-js@2.78.0:
-    resolution: {integrity: sha512-cXDtu1U0LeZj/xfnFoV7yCze37TcbNo8FCxy1FpqhMbB9u9QxxDSW6pA5gm/07Ei7m260Lof4CZx67Cu6DPeig==}
+  /@supabase/auth-js@2.87.1:
+    resolution: {integrity: sha512-6RDeOf5TVoaXFtEstN188ykp3pXLZaU9qoAWfx8dc50FFAAqt+kcFJ96V0IvSmcpb4mDAWcpTJ7BegmVDn/WIw==}
+    engines: {node: '>=20.0.0'}
     dependencies:
-      '@supabase/node-fetch': 2.6.15
       tslib: 2.8.1
     dev: false
 
-  /@supabase/functions-js@2.78.0:
-    resolution: {integrity: sha512-t1jOvArBsOINyqaRee1xJ3gryXLvkBzqnKfi6q3YRzzhJbGS6eXz0pXR5fqmJeB01fLC+1njpf3YhMszdPEF7g==}
+  /@supabase/functions-js@2.87.1:
+    resolution: {integrity: sha512-rWmYo4gRD0XAjMhYDlz7IH67bp4TIQ1UE4VqwIQtl1gGPwtLDq6wcRnu7jLKlXx0Gtrknw/eoiHYG9//XrCTzQ==}
+    engines: {node: '>=20.0.0'}
     dependencies:
-      '@supabase/node-fetch': 2.6.15
       tslib: 2.8.1
     dev: false
 
-  /@supabase/node-fetch@2.6.15:
-    resolution: {integrity: sha512-1ibVeYUacxWYi9i0cf5efil6adJ9WRyZBLivgjs+AUpewx1F3xPi7gLgaASI2SmIQxPoCEjAsLAzKPgMJVgOUQ==}
-    engines: {node: 4.x || >=6.0.0}
+  /@supabase/postgrest-js@2.87.1:
+    resolution: {integrity: sha512-Yzu5eL3iGmZW0C/8x+vEojAOou63FI9oVw8HI8YOq63+5yM8g8aGh7Y1E2vbXFb7+gHGsPqLnaC6dPhrYt7qBA==}
+    engines: {node: '>=20.0.0'}
     dependencies:
-      whatwg-url: 5.0.0
-    dev: false
-
-  /@supabase/postgrest-js@2.78.0:
-    resolution: {integrity: sha512-AwhpYlSvJ+PSnPmIK8sHj7NGDyDENYfQGKrMtpVIEzQA2ApUjgpUGxzXWN4Z0wEtLQsvv7g4y9HVad9Hzo1TNA==}
-    dependencies:
-      '@supabase/node-fetch': 2.6.15
       tslib: 2.8.1
     dev: false
 
-  /@supabase/realtime-js@2.78.0:
-    resolution: {integrity: sha512-rCs1zmLe7of7hj4s7G9z8rTqzWuNVtmwDr3FiCRCJFawEoa+RQO1xpZGbdeuVvVmKDyVN6b542Okci+117y/LQ==}
+  /@supabase/realtime-js@2.87.1:
+    resolution: {integrity: sha512-XvLtEznxmYZXA7LYuy5zbSXpSYjDLJq2wQeRh3MzON2OR4U8Kq+RtPz2E2Wi8HEzvBfsc+nNu1TG8LQ9+3DRkA==}
+    engines: {node: '>=20.0.0'}
     dependencies:
-      '@supabase/node-fetch': 2.6.15
       '@types/phoenix': 1.6.6
       '@types/ws': 8.18.1
       tslib: 2.8.1
@@ -2400,22 +2393,23 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@supabase/storage-js@2.78.0:
-    resolution: {integrity: sha512-n17P0JbjHOlxqJpkaGFOn97i3EusEKPEbWOpuk1r4t00Wg06B8Z4GUiq0O0n1vUpjiMgJUkLIMuBVp+bEgunzQ==}
+  /@supabase/storage-js@2.87.1:
+    resolution: {integrity: sha512-0Uc8tNV4yzkNNmp1inpXru0RB4a7ECq05G2S6BDvSpMxTxJrDVJ4vVDwyhqB8ZZ+O9+8prHaQYoByQeuDnwpFQ==}
+    engines: {node: '>=20.0.0'}
     dependencies:
-      '@supabase/node-fetch': 2.6.15
+      iceberg-js: 0.8.1
       tslib: 2.8.1
     dev: false
 
-  /@supabase/supabase-js@2.78.0:
-    resolution: {integrity: sha512-xYMRNBFmKp2m1gMuwcp/gr/HlfZKqjye1Ib8kJe29XJNsgwsfO/f8skxnWiscFKTlkOKLuBexNgl5L8dzGt6vA==}
+  /@supabase/supabase-js@2.87.1:
+    resolution: {integrity: sha512-tVgqZqnHZVum584KuUKSQZgcy6ZkhVd6gG8QWg2QfIXH9HmXdamauxdVsLXwaNPJxEdOyfAfwIyi5XUsiVYWtg==}
+    engines: {node: '>=20.0.0'}
     dependencies:
-      '@supabase/auth-js': 2.78.0
-      '@supabase/functions-js': 2.78.0
-      '@supabase/node-fetch': 2.6.15
-      '@supabase/postgrest-js': 2.78.0
-      '@supabase/realtime-js': 2.78.0
-      '@supabase/storage-js': 2.78.0
+      '@supabase/auth-js': 2.87.1
+      '@supabase/functions-js': 2.87.1
+      '@supabase/postgrest-js': 2.87.1
+      '@supabase/realtime-js': 2.87.1
+      '@supabase/storage-js': 2.87.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -3625,6 +3619,11 @@ packages:
     dependencies:
       function-bind: 1.1.2
 
+  /iceberg-js@0.8.1:
+    resolution: {integrity: sha512-1dhVQZXhcHje7798IVM+xoo/1ZdVfzOMIc8/rgVSijRK38EDqOJoGula9N/8ZI5RD8QTxNQtK/Gozpr+qUqRRA==}
+    engines: {node: '>=20.0.0'}
+    dev: false
+
   /ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
@@ -4571,10 +4570,6 @@ packages:
     dependencies:
       is-number: 7.0.0
 
-  /tr46@0.0.3:
-    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
-    dev: false
-
   /ts-api-utils@2.1.0(typescript@5.9.3):
     resolution: {integrity: sha512-CUgTZL1irw8u29bzrOD/nH85jqyc74D6SshFgujOIA7osm2Rz7dYH77agkx7H4FBNxDq7Cjf+IjaX/8zwFW+ZQ==}
     engines: {node: '>=18.12'}
@@ -4759,17 +4754,6 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
-
-  /webidl-conversions@3.0.1:
-    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
-    dev: false
-
-  /whatwg-url@5.0.0:
-    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
-    dependencies:
-      tr46: 0.0.3
-      webidl-conversions: 3.0.1
-    dev: false
 
   /which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
